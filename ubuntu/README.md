@@ -14,7 +14,7 @@
 ```
 
 
-## 3. Prepare nginx as HTTPS in front
+## 2. Prepare nginx as HTTPS in front
 
 ```bash
 # apt install nginx letsencrypt
@@ -33,7 +33,7 @@ Check it:
 ```
 
 
-## 4. Optionally add users
+## 3. Optionally add users
 
 It includes simple htpasswd based authentication, and example var-lib-registry/htpasswd file has 'user' account with 'user' passwod.
 
@@ -44,7 +44,7 @@ You can manage user list as follows:
 ```
 
 
-## 5. Test it
+## 4. Test it
 
 ```bash
 docker login -u $user -p $password $YOUR_DOMAIN
@@ -54,6 +54,8 @@ docker push $YOUR_DOMAIN/new-user/alpine:3.4
 docker logout
 ```
 
+
+## TODO list
 
 - [ ] TODO: cover letsencrypt renewal setup
 - [ ] TODO: cover case with enabled firewall

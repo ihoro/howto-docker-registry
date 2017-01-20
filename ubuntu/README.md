@@ -55,5 +55,5 @@ docker logout
 ```
 
 
-TODO: cover letsencrypt renewal setup
-TODO: cover case with enabled firewall
+- [ ] TODO: cover letsencrypt renewal setup
+- [ ] TODO: cover case with enabled firewall

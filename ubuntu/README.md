@@ -49,10 +49,11 @@ You can manage user list as follows:
 ```bash
 docker login -u $user -p $password $YOUR_DOMAIN
 docker pull alpine:3.4
-docker tag alpine:3.4 $YOUR_DOMAIN/new-user/alpine:3.4
+docker tag alpine:3.4 $YOUR_DOMAIN/some-context/alpine:3.4
 docker push $YOUR_DOMAIN/new-user/alpine:3.4
 docker logout
 ```
 
 
+TODO: cover letsencrypt renewal setup
 TODO: cover case with enabled firewall

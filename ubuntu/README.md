@@ -50,7 +50,7 @@ $ htpasswd -b var-lib-registry/htpasswd new-user with-password
 $ docker login -u $user -p $password $YOUR_DOMAIN
 $ docker pull alpine:3.4
 $ docker tag alpine:3.4 $YOUR_DOMAIN/some-context/alpine:3.4
-$ docker push $YOUR_DOMAIN/new-user/alpine:3.4
+$ docker push $YOUR_DOMAIN/some-context/alpine:3.4
 $ docker logout
 ```
 
